@@ -1,13 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAB_HTML</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+    </style>
 </head>
+
 <body>
-    
-    <h1>Hello world</h1>
+
+    <h3>LAB HTML : 1</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>tag name</th>
+                    <th>attribute</th>
+                    <th>definition and usage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>h</td>
+                    <td>
+                        h1 - h6
+                    </td>
+                    <td>The h1 to h6 tags are used to define HTML headings. h1 defines the most important heading. h6
+                        defines the least important heading.</td>
+                </tr>
+                <tr>
+                    <td>p</td>
+                    <td>The p tag also supports the Global Attributes in HTML.</td>
+                    <td>The p tag defines a paragraph.</td>
+                </tr>
+                <tr>
+                    <td>div</td>
+                    <td>The div tag also supports the Global Attributes in HTML.</td>
+                    <td>The div tag defines a division or a section in an HTML document.
+
+                        The div tag is used as a container for HTML elements - which is then styled with CSS or
+                        manipulated with JavaScript.
+
+                        The div tag is easily styled by using the class or id attribute.</td>
+                </tr>
+                <tr>
+                    <td>img</td>
+                    <td>
+                        <ul>
+                            <li>src - Specifies the path to the image</li>
+                            <li>alt - Specifies an alternate text for the image</li>
+                        </ul>
+                    </td>
+                    <td>The HTML img tag is used to embed an image in a web page.
+
+                        Images are not technically inserted into a web page; images are linked to web pages. The img tag
+                        creates a holding space for the referenced image.
+
+                        The img tag is empty, it contains attributes only, and does not have a closing tag.</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>
+                        <ul>
+                            <li>download Specifies that the target will be downloaded when a user clicks on the
+                                hyperlink</li>
+                            <li>href Specifies the URL of the page the link goes to</li>
+                            <li>hreflang Specifies the language of the linked document</li>
+                            <li>media what media/device the linked document is optimized for</li>
+                            <li>ping Specifies a space-separated list of URLs to which, when the link is followed, post
+                                requests with the body ping will be sent by the browser (in the background). Typically
+                                used for tracking.</li>
+                            <li>referrerpolicy Specifies which referrer to send</li>
+                            <li>rel Specifies the relationship between the current document and the linked document</li>
+                            <li>target Specifies where to open the linked document</li>
+                            <li>type media_type Specifies the media type of the linked document</li>
+                        </ul>
+                    </td>
+                    <td>The a tag defines a hyperlink, which is used to link from one page to another.
+
+                        The most important attribute of the a element is the href attribute, which indicates the link's
+                        destination</td>
+                </tr>
+                <tr>
+                    <td>ul</td>
+                    <td>The ul tag also supports the Global Attributes in HTML.</td>
+                    <td>The ul tag defines an unordered (bulleted) list.
+
+                        Use the ul tag together with the li tag to create unordered lists.</td>
+                </tr>
+                <tr>
+                    <td>ol</td>
+                    <td>
+                        <ul>
+                            <li>reversed Specifies that the list order should be reversed (9,8,7...)</li>
+                            <li>start Specifies the start value of an ordered list</li>
+                            <li>type Specifies the kind of marker to use in the list</li>
+                        </ul>
+                    </td>
+                    <td>The ol tag defines an ordered list. An ordered list can be numerical or alphabetical.
+
+                        The li tag is used to define each list item.</td>
+                </tr>
+                <tr>
+                    <td>table</td>
+                    <td>
+                        <ul>
+                            <li>caption</li>
+                            <li>colgroup</li>
+                            <li>thead</li>
+                            <li>tfoot</li>
+                            <li>tbody</li>
+                        </ul>
+                    </td>
+                    <td>The table tag defines an HTML table.
+
+                        Each table row is defined with a tr tag. Each table header is defined with a th tag. Each table
+                        data/cell is defined with a td tag.
+
+                        By default, the text in th elements are bold and centered.
+
+                        By default, the text in td elements are regular and left-aligned.</td>
+                </tr>
+                <tr>
+                    <td>form</td>
+                    <td>
+                        <ul>
+                            <li>button</li>
+                            <li>fieldset</li>
+                            <li>input</li>
+                            <li>label</li>
+                            <li>meter</li>
+                            <li>object</li>
+                            <li>output</li>
+                            <li>select</li>
+                            <li>textarea</li>
+                        </ul>
+                    </td>
+                    <td>The form attribute specifies the form the element belongs to.
+
+                        The value of this attribute must be equal to the id attribute of a form element in the same
+                        document.</td>
+                </tr>
+                <tr>
+                    <td>button</td>
+                    <td>
+                        <ul>
+                            <li>auto	Lets the browser calculate the bottom edge position. This is default</li>
+                            <li>length	Sets the bottom edge position in px, cm, etc. Negative values are allowed.</li>
+                            <li>%	Sets the bottom edge position in % of containing element. Negative values are allowed</li>
+                            <li>initial	Sets this property to its default value. Read about initial</li>
+                            <li>inherit	Inherits this property from its parent element. Read about inherit</li>
+                        </ul>
+                    </td>
+                    <td>The bottom property affects the vertical position of a positioned element. This property has no effect on non-positioned elements.</td>
+                </tr>
+            </tbody>
+        </table>
 
 </body>
+
 </html>
