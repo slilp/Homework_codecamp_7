@@ -1,0 +1,93 @@
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+.example-img1{
+  background-image: url("img/news.PNG");
+  background-size: cover;
+  width: 700px;
+  height: 700px;
+  margin: 5px;
+
+}
+
+.example-img2{
+  background-image: url("img/shopping.PNG");
+  background-size: cover;
+  width: 700px;
+  height: 700px;
+  margin: 5px;
+
+}
+
+.example-img3{
+  background-image: url("img/pantip.PNG");
+  background-size: cover;
+  width: 700px;
+  height: 700px;
+  margin: 5px;
+
+}
+
+
+.newslayout {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto auto auto;
+  background-color: #fff;
+  color: #444;
+  width: 700px;
+  height: 700px;
+  margin: 5px;
+}
+
+.mainnews{
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.advertise{
+  grid-row-start: 4;
+  grid-row-end: 6;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+
+.pantiplayout {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: auto auto auto auto;
+  background-color: #fff;
+  color: #444;
+  width: 700px;
+  height: 700px;
+  margin: 5px;
+  float: right;
+}
+
+.shoppinglayout {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto auto auto;
+  background-color: #fff;
+  color: #444;
+  width: 700px;
+  height: 700px;
+  margin: 5px;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
