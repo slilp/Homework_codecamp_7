@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      th,
+      td {
+        width: 180px;
+        text-align: left;
+        padding-right: 20px;
+      }
+      .sub-th,
+      .sub-td {
+        width: 80px;
+        padding-right: 20px;
+      }
+      input,
+      select {
+        width: 100%;
+      }
+      input[type="submit"] {
+        width: 120px;
+        background-color: orangered;
+        color: white;
+        height: 35px;
+        margin: 8px 0;
+        cursor: pointer;
+        font-size: 15px;
+        border: none;
+      }
+
+      input[type="submit"]:hover {
+        background-color:orange;
+        border: none;
+      }
+    </style>
+    <title>Booking</title>
+  </head>
+  <body>
+    <form action="#">
+      <table>
+        <tr>
+          <th>Flying from</th>
+          <th>To</th>
+        </tr>
+        <tr>
+          <td>
+            <select id="flyingfrom" name="flyingfrom">
+              <option>Thailand</option>
+              <option>Japan</option>
+              <option>Vietnam</option>
+              <option>Korea</option>
+              <option>Indonesia</option>
+            </select>
+          </td>
+          <td>
+            <select id="flyingto" name="flyingto">
+              <option>Thailand</option>
+              <option>Japan</option>
+              <option>Vietnam</option>
+              <option>Korea</option>
+              <option>Indonesia</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <br />
+
+      <table>
+        <tr>
+          <th>Departing</th>
+          <th>Returning</th>
+        </tr>
+        <tr>
+          <td>
+            <input type="date" id="departing" name="departing" />
+          </td>
+          <td>
+            <input type="date" id="returning" name="returning" />
+          </td>
+        </tr>
+      </table>
+      <br />
+      <table>
+        <tr>
+          <th class="sub-th">Adult</th>
+          <th class="sub-th">Child</th>
+          <th class="sub-th">Infant</th>
+          <th class="sub-th" style="color: red">Currency</th>
+        </tr>
+        <tr>
+          <td class="sub-td">
+            <input
+              type="number"
+              id="quantity"
+              value="1"
+              name="quantity"
+              min="1"
+              max="10"
+              id="adult"
+              name="adult"
+            />
+          </td>
+          <td class="sub-td">
+            <input
+              type="number"
+              id="quantity"
+              value="1"
+              name="quantity"
+              min="1"
+              max="10"
+              id="child"
+              name="child"
+            />
+          </td>
+          <td class="sub-td">
+            <input
+              type="number"
+              id="quantity"
+              value="1"
+              name="quantity"
+              min="1"
+              max="10"
+              id="infant"
+              name="infant"
+            />
+          </td>
+          <td class="sub-td">
+            <select id="currency" name="currency">
+              <option>THB</option>
+              <option>USD</option>
+              <option>EUB</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <br />
+      <input type="submit" value="SEARCH" />
+    </form>
+  </body>
+</html>
