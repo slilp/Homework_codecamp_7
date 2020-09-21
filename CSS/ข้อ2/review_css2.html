@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review CSS 2 Slide 7</title>
+    <style>
+        th,td {
+        width: auto;
+        text-align: left;
+        border: 2px solid  black ;
+        padding-left: 10px;
+       }
+    </style>
+</head>
+<body>
+    <h3>
+        <span><a href="../ข้อ1/review_css1.html">1</a></span> 
+        <span> / </span>
+        <span> <a href="../ข้อ3/slide10_mockup.html">3</a></span>
+    </h3>
+    <h1>Review CSS 2 Slide 7</h1>
+    <table style="border-collapse: collapse;">
+        <tr>
+            <th>Problem</th>
+            <th>Answer</th>
+        </tr>
+        <tr>
+            <td>property และ value คืออะไรแตกต่างกันอย่างไร</td>
+            <td>
+                property คือประเภทของลักษณะที่อยากจะเปลี่ยน ส่วน value คือค่าของ property นั้น เช่น สี มี color เป็น property ส่วน red เป็น value
+            </td>
+        </tr>
+        <tr>
+            <td>property ที่สอนใน precamp มีกี่กลุ่มอะไรบ้าง</td>
+            <td>
+                <p>5 กลุ่ม</p>
+                <ol>
+                    <li>content : color,size,font,text,list-style-type,height,wifth,background</li>
+                    <li>border : border table</li>
+                    <li>padding : padding(top right buttom left)</li>
+                    <li>margin : margin(top right buttom left)</li>
+                    <li>element : เขียน style บน head</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>value unit มีกี่ประเภทอะไรบ้างแต่ละ ประเภทคืออะไร</td>
+            <td>
+                <p>2 ประเภท</p>
+                <ol>
+                    <li>Absolute Lengths : เป็นขนาดตามจริงของ element นั้นๆ
+                        <ul>
+                            <li>cm : centimeters</li>
+                            <li>mm : millimeters</li>
+                            <li>in : inches (1in = 96px = 2.54cm)</li>
+                            <li>px * : pixels (1px = 1/96th of 1in)</li>
+                            <li>pt : points (1pt = 1/72 of 1in)</li>
+                            <li>pc : picas (1pc = 12 pt)</li>
+                        </ul>
+                    </li>
+                    <li>Relative Lengths : เป็นตัวที่เปลี่ยนเเปลงให้ขนาดตามจริงมีการเปลี่ยนเเปลงไปได้
+                        <ul>
+                            <li>em : Relative to the font-size of the element (2em means 2 times the size of the current font)</li>
+                            <li>ex : Relative to the x-height of the current font (rarely used)</li>
+                            <li>ch : Relative to the width of the "0" (zero)</li>
+                            <li>rem : Relative to font-size of the root element</li>
+                            <li>vw : Relative to 1% of the width of the viewport*</li>
+                            <li>vh : Relative to 1% of the height of the viewport*</li>
+                            <li>vmin : Relative to 1% of viewport's* smaller dimension</li>
+                            <li>vmax : Relative to 1% of viewport's* larger dimension</li>
+                            <li>% : Relative to the parent element</li>
+                        </ul>
+                    </li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
