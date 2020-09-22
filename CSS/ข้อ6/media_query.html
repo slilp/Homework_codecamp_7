@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <style>
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .item{
+            width: 8%;
+            height:50vh;
+            background-color:black;
+            margin: 5px;
+            position: relative;
+            color: white;
+
+        }
+        .item-img{
+            width: 80%;
+            height:50vh;
+            margin: 5px;
+            background-image: url("../img/wallpaper-starwar.jpg") ;
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: center;
+
+
+        }
+
+        .main-header{
+            padding: 10px;
+            font-size: 15px;
+        }
+
+        .content{
+            margin: 0 auto;
+            font-size: 10px;
+            position:absolute;
+            left: 25%;
+            top: 50%;
+            right: 25%;
+        }
+
+        @media only screen and (max-width: 1210px) {
+
+            .item-img{
+                height:50vh;
+                width: 45%;
+            }
+            .item{
+                height:50vh;
+                width: 45%;
+            }
+
+            .main-header{
+                font-size: 25px;
+            }
+
+            .content{
+                font-size: 20px;
+                left:10%;
+            }
+        }
+
+        @media only screen and (max-width: 750px) {
+
+            .item{
+                width: 100%;
+                height:30vh;
+            }
+
+            .item-img{
+                width: 100%;
+            }
+
+            .main-header{
+            font-size: 50px;
+            }
+
+            .content{
+                font-size: 38px;
+                left: 5%;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item">
+            <div class="main-header">
+                Join me the <b>dark side</b>
+            </div>
+            <div class="content">
+                May the force be with you !
+            </div>
+        </div>
+        <div class="item-img"></div>
+        <div class="item">
+            <div class="main-header">
+                Join me the <b>light side</b>
+            </div>
+            <div class="content">
+                May the force be with you !
+            </div>
+        </div>
+        <div class="item">
+            <div class="main-header">
+                Join me the <b>dark side</b>
+            </div>
+            <div class="content">
+                May the force be with you !
+            </div>
+        </div>
+        <div class="item-img"></div>
+        <div class="item">
+            <div class="main-header">
+                Join me the <b>light side</b>
+            </div>
+            <div class="content">
+                May the force be with you !
+            </div>
+        </div>
+    </div>
+</body>
+</html>
