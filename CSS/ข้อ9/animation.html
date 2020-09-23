@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation CSS slide 52</title>
+    <style>
+        .item1{
+            width: 250px;
+            height: 250px;
+            background-color: red;
+            animation-name: move;
+            animation-delay: 5s;
+            animation-direction:normal;
+            animation-duration: 10s;
+            position:relative;
+            animation-iteration-count: infinite;
+            margin: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        .item2{
+            width: 250px;
+            height: 250px;
+            background-color: red;
+            animation-name: move;
+            animation-delay: 5s;
+            animation-direction: reverse;
+            animation-duration: 10s;
+            position:relative;
+            animation-iteration-count: infinite;
+            margin: 10px;
+            color: white;
+            text-align: center;
+        }
+
+
+        .item3{
+            width: 250px;
+            height: 250px;
+            background-color: red;
+            animation-name: move;
+            animation-delay: 5s;
+            animation-direction:alternate;
+            animation-duration: 10s;
+            position:relative;
+            animation-iteration-count: infinite;
+            margin: 10px;
+            color: white;
+            position: absolute;
+            text-align: center;
+        }
+
+        @keyframes move{
+            0%{
+                background-color: red;
+            }
+
+            25%{
+                background-color: skyblue;
+            }
+
+            50%{
+                background-color: blue;
+            }
+
+            75%{
+                background-color: yellow;
+            }
+
+            100%{
+                background-color: orange;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <h3>
+        <span><a href="../ข้อ1/review_css1.html">1</a></span> 
+        <span> / </span>
+        <span> <a href="../ข้อ2/review_css2.html">2</a></span>
+        <span> / </span>
+        <span> <a href="../ข้อ3/slide10_mockup.html">3</a></span>
+        <span> / </span>
+        <span><a href="../ข้อ4/review_css3.html">4</a></span> 
+        <span> / </span>
+        <span> <a href="../ข้อ6/media_query.html">6</a></span>
+        <span> / </span>
+        <span> <a href="../ข้อ8/keyframes.html">8</a></span>
+        <span> / </span>
+        <span><a href="../ข้อ10/anumation2.html">10</a></span> 
+    </h3>
+
+    <div class="item1">
+        <h3>normal</h3>
+    </div>
+    <div class="item2">
+        <h3>reverse</h3>
+    </div>
+    <div class="item3">
+        <h3>alternate</h3>
+    </div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation CSS slide 57</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row; 
+
+        }
+
+        .item1{
+            background-color: red;
+            margin: 10px;
+            width: 250px;
+            height: 250px;
+            animation-name: move1;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+        }
+
+        @keyframes move1{
+            0%{
+                background-color: red;
+            }
+
+            25%{
+                background-color: skyblue;
+            }
+
+            50%{
+                background-color: blue;
+            }
+
+            75%{
+                background-color: yellow;
+            }
+
+            100%{
+                background-color: orange;
+            }
+        }
+
+        .item3{
+            background-color: red;
+            margin: 10px;
+            width: 250px;
+            height: 250px;
+            animation-name: move3;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+            position: relative;
+        }
+
+
+        @keyframes move3{
+            0%{
+                top: 0px;
+            }
+
+            25%{
+                top: 100px;
+            }
+
+            50%{
+                top: 200px;
+            }
+
+            75%{
+                top: 300px;
+            }
+
+            100%{
+                top: 400px;
+            }
+        }
+
+        .item2{
+            background-color: red;
+            margin: 10px;
+            width: 250px;
+            height: 250px;
+            animation-name: move2;
+            animation-iteration-count: infinite;
+            animation-duration: 25s;
+  
+        }
+
+        @keyframes move2{
+            0%{
+                opacity: 0;
+            }
+
+            25%{
+                opacity: 1;
+            }
+
+            50%{
+                opacity: 0;
+            }
+
+            75%{
+                opacity: 1;
+            }
+
+            100%{
+                opacity: 0;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <h3>
+        <span><a href="../ข้อ1/review_css1.html">1</a></span> 
+        <span> / </span>
+        <span> <a href="../ข้อ2/review_css2.html">2</a></span>
+        <span> / </span>
+        <span> <a href="../ข้อ3/slide10_mockup.html">3</a></span>
+        <span> / </span>
+        <span><a href="../ข้อ4/review_css3.html">4</a></span> 
+        <span> / </span>
+        <span> <a href="../ข้อ6/media_query.html">6</a></span>
+        <span> / </span>
+        <span> <a href="../ข้อ8/keyframes.html">8</a></span>
+        <span> / </span>
+        <span><a href="../ข้อ9/animation.html">9</a></span> 
+    </h3>
+
+
+    <div class="container">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+    </div>
+
+
+
+</body>
+</html>

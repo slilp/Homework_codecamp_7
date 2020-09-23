@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+        }
+        
+       .item1{
+            height: 150px;
+            padding: 10px;
+            animation-name: move1;
+            animation-duration: 10s;
+            top: 0;
+            width: 150px;
+            background-color: green;
+            position: relative;
+        }
+
+        .item2{
+            width: 150px;
+            height: 150px;
+            padding: 10px;
+            background-color: yellow;
+            animation-name: move2;
+            animation-duration: 10s;
+            position: relative;
+        }
+
+        @keyframes move1{
+            from{
+                top: 0px;
+                width: 150px;
+                background-color: green;
+            }
+
+            to {
+                top: 500px;
+                color: white;
+                width: 75px;
+                border-radius: 20%;
+                background-color: red;
+                display: none;
+            }
+        }
+
+        @keyframes move2 {
+            0%{
+                top: 0px;
+                width: 150px;
+                background-color: yellow;
+
+            }
+
+            50%{
+                left: 250px;
+                color: blue;
+                width: 75px;
+                border-radius: 20%;
+                background-color: darkmagenta;
+                display: none;
+
+            }
+
+            100%{
+                left: 100px;
+                top: 500px;
+                color: white;
+                width: 75px;
+                border-radius: 20%;
+                background-color: red;
+                display: none;
+
+            }
+        }
+
+    </style>
+    <title>Keyframes slide 48</title>
+</head>
+<body>
+    <h3>
+        <span><a href="../ข้อ1/review_css1.html">1</a></span> 
+        <span> / </span>
+        <span> <a href="../ข้อ2/review_css2.html">2</a></span>
+        <span> / </span>
+        <span> <a href="../ข้อ3/slide10_mockup.html">3</a></span>
+        <span> / </span>
+        <span><a href="../ข้อ4/review_css3.html">4</a></span> 
+        <span> / </span>
+        <span> <a href="../ข้อ6/media_query.html">6</a></span>
+        <span> / </span>
+        <span> <a href="../ข้อ9/animation.html">9</a></span>
+        <span> / </span>
+        <span><a href="../ข้อ10/anumation2.html">10</a></span> 
+    </h3>
+    <div class="container">
+        <div style="padding-right: 50px;">
+            <h3>keyframes เเบบ from to</h3>
+            <div class="item1">
+                <h2>FROM TO</h2>
+            </div>
+        </div>
+        <div>
+            <h3>keyframes เเบบ %</h3>
+            <div class="item2">
+                <h2>CHANGE %</h2>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
