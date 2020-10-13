@@ -496,3 +496,30 @@ draw19(2);
 draw19(3);
 draw19(4);
 console.log('');
+
+
+// slide 98
+const draw20= (n) => {
+    let star = "";
+    let printCount = 0;
+    for(let i = 0 ; i < n ; i++){
+            
+        let subStar = "";
+
+            for(let j = 0 ; j < n*2-1; j++){
+                let symbol = "_";
+                if(j==i+2) symbol = '*' ;
+                subStar = subStar + symbol;
+            } 
+
+           
+        star = subStar;
+        console.log(star);
+    }
+
+};
+// test
+console.log('slide 98');
+draw20(3);
+console.log('');
+
