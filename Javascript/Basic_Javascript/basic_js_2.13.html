@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // ให้รับค่าจาก prompt มาเรื่อย ๆ จนกระทั่ง เจอคำว่า stop แล้วให้แสดงผลต่างของตัวเลขที่น้อยที่สุด และ มากที่สุดออ
+
+      const minmax2 = () => {
+        let stop = true;
+        let num = [];
+
+        while (stop) {
+          let n = prompt("input number :");
+          if (n == "stop") {
+            stop = false;
+          } else {
+            num.push(Number(n));
+          }
+        }
+
+        let min = num[0];
+        let max = num[0];
+
+        num.forEach((item) => {
+          if (item < min) min = item;
+        });
+
+        num.forEach((item) => {
+          if (item > max) max = item;
+        });
+
+        console.log(max - min);
+      };
+      minmax2();
+    </script>
+  </body>
+</html>

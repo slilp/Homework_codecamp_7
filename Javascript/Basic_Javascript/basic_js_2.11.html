@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // ให้รับค่าจาก prompt มาเรื่อย ๆ จนกระทั่ง เจอคำว่า stop แล้วให้แสดงตัวเลขที่น้อยที่สุดออกมา 3 อันดับแรก
+
+      const min2 = () => {
+        let stop = true;
+        let num = [];
+
+        while (stop) {
+          let n = prompt("input number :");
+          if (n == "stop") {
+            stop = false;
+          } else {
+            num.push(Number(n));
+          }
+        }
+
+        num.sort((a, b) => a - b);
+
+        console.log(num.slice(0, 3));
+      };
+
+      min2();
+    </script>
+  </body>
+</html>

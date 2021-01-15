@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // เขียนโปรแกรมที่รับค่า a และ b จาก prompt อย่างละครั้ง และให้เช็คว่า a / b
+      // เป็นเศษส่วนอย่างต่ำไหม ถ้าเป็นให้แสดง alert(a / b) ออกมา ถ้าไม่เป็นเศษส่วนอย่างต่ำ
+      // ให้หาเศษส่วนอย่างต่ำของ a และ b ก่อน หลังจากนั้น alert(a / b) ที่เป็นเศษส่วนอย่างต่ำแล้วออกมา
+
+      const problem1 = () => {
+        let a = prompt("input a :");
+        let b = prompt("input b :");
+
+        for (let i = a; i > 0; i--) {
+          if (a % i == 0 && b % i == 0) {
+            a = a / i;
+            b = b / i;
+          }
+        }
+
+        console.log(`${a}/${b}`);
+      };
+
+      problem1();
+    </script>
+  </body>
+</html>

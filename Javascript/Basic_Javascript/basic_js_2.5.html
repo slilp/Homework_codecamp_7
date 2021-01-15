@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // ให้เขียนโปรแกรมที่หาผลลัพธ์ของ 1 - 2 + 3 - 4 + 5 - 6 + 7 - … + 18953 - 18954 แล้วแสดง alert คำตอบออกมา
+
+      const sum_series = (a1, an, d) => {
+        const n = (an - a1) / d + 1;
+
+        const result = (n / 2) * (an + a1);
+
+        return result;
+      };
+
+      alert(sum_series(1, 18953, 2) + sum_series(-2, -18954, -2));
+      
+    </script>
+  </body>
+</html>

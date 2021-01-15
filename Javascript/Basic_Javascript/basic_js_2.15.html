@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // ให้รับค่าจาก prompt ที่เป็น Number เข้ามา และให้ทำการสลับตัวเลขจากหลังไปหน้าและ alert ค่านั้นออกมา ถ้าเป็นลบให้คงค่าลบนั้นไว้ด้วย
+      // -------------------
+      // INPUT
+      // -35
+      // OUTPUT
+      // -53
+      // -------------------------
+      // INPUT
+      // 542763
+      // OUPUT
+      // 367245
+      // -------------------------
+      // INPUT
+      // 520
+      // OUPUT
+      // 25
+      // -------------------------
+
+      const reverse = () => {
+        const n = prompt("input value : ");
+        let text = "";
+        let isMinus = false;
+        for (let char of String(n)) {
+          if (char != "-") {
+            text = char + text;
+          } else {
+            isMinus = true;
+          }
+        }
+
+        console.log(isMinus ? "-" + text : text);
+      };
+
+      reverse();
+
+    </script>
+  </body>
+</html>
