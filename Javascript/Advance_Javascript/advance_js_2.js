@@ -105,3 +105,34 @@ console.log(changeStringToThaiDate('31-11-2000'));
 console.log('input 2 - 12-13-1996');
 console.log(changeStringToThaiDate('12-13-1996'));
 
+//6. ให้เขียนฟังก์ชัน isTheSameAnagram( string1 , string2 ) โดยถ้า string ถ้าสองเป็น anagram กันให้คืนค่าาเป็น true ถ้าไม่ให้คืนเป็น false
+
+const isTheSameAnagram =(s1, s2)=>{
+  if (s1.length !== s2.length) {
+    return false;
+  }
+  if (s1 === s2) {
+    return true;
+  }
+
+  var c = '',
+    i = 0,
+    limit = s1.length,
+    match = 0,
+    idx;
+  while(i < s1.length){
+    c = s1.substr(i++, 1);
+    idx = s2.indexOf(c);
+    if (idx > -1) {
+      match++;
+      s2 = s2.substr(0, idx) + s2.substr(idx + 1);
+    } else {
+      return false;
+    }
+  }
+  return match === s1.length;
+}
+
+console.log('\nข้อ 6');
+console.log('input 1 cinema iceman');
+console.log( isTheSameAnagram('cinema','iceman'));
