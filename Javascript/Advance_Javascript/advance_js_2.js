@@ -41,3 +41,27 @@ const checkCharacter =(word)=>{
   console.log('\nข้อ 2');
   console.log('input 1 - (2,4)');
   console.log(pow(2,4));
+
+  //3. ให้ฟังก์ชัน thaiTypeof( variable ) โดยฟังก์ชันดังกล่าวจะทำหน้าที่เหมือน typeof ทุกประการแต่ จะแสดงเป็นภาษาไทย
+
+  const thaiTypeof =(variable)=>{ 
+
+      switch(typeof(variable)){
+        case 'string' : return 'ข้อความ';
+        case 'boolean' : return 'ค่าความจริง';
+        case 'number' : return 'ตัวเลข';
+        case 'object' : return 'ออปเจ็คต์';
+        case 'null' : return 'ค่าว่าง'  ;
+        default : return 'ไม่ทราบค่า' ; break;
+      }
+
+  }
+
+  console.log('\nข้อ 3');
+  console.log('input 1 - Hello');
+  console.log(thaiTypeof('Hello'));
+  console.log('input 2 - 2');
+  console.log(thaiTypeof(2));
+  console.log('input 3 - {name:Hello}');
+  console.log(thaiTypeof({name:'Hello'}));
+
