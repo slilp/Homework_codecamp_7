@@ -1,0 +1,41 @@
+.container{
+    margin:auto;
+    width: 50%;
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+.content{
+    padding: 2rem;
+}
+
+.text-contenr{
+    word-break: break-all;
+}
+
+.img-content{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.img-content img{
+    width: 100%;
+}
+
+.btn-like{
+    width: 30%;
+    font-family: 'Kanit';
+    font-size: 1rem;
+    border: none;
+    background-color: white;
+    color: grey;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.btn-like:hover{
+    cursor: pointer;
+    background-color: rgb(241, 230, 230);
+}

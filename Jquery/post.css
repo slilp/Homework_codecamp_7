@@ -1,0 +1,58 @@
+header{
+    margin:auto;
+    width:50%;
+    margin-bottom: 1rem;
+    background-color: red;
+
+}
+
+.post-header{
+    background-color: rgb(230, 220, 220);
+    padding: 0.05rem;
+    padding-left: 1rem;
+}
+
+.post-content{
+    background-color: white;
+    padding: 0.05rem;
+    text-align: center;
+}
+
+.post-footer{
+    background-color: rgb(230, 220, 220);
+    padding: 1rem;
+    padding-left: 1rem;
+    text-align: center;
+}
+
+.text-post{
+    width: 97%;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: 'Kanit';
+
+}
+
+.btn-post{
+    width: 90%;
+    color: white;
+    background-color: rgb(104, 104, 224);
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-family: 'Kanit';
+
+}
+
+.btn-post:hover{
+   cursor: pointer;
+   background-color: rgb(80, 80, 211);
+}
+
+.img-url-post{
+    width: 50%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: 'Kanit';
+
+}
