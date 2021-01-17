@@ -167,5 +167,38 @@ console.log('input 4 1,5');
 console.log( numberOfSquare(1,5));
 
 
+//8.ให้เขียนฟังก์ชัน toChange( money ) โดยฟังก์ชันดังกล่าวจะแปลงเงินที่ได้รับมาเป็นเงินทอนโดยให้ใช้จำนวนแบงค์และเหรียญน้อยที่สุด
+
+const toChange =(money)=>{
+    let tempMoney = money;
+    const c1000 = Math.floor(tempMoney/1000);
+    tempMoney = tempMoney - c1000*1000;
+    const c500 = Math.floor(tempMoney/500);
+    tempMoney = tempMoney - c500*500;
+    const c100 = Math.floor(tempMoney/100);
+    tempMoney = tempMoney - c100*100;
+    const c50 = Math.floor(tempMoney/50);
+    tempMoney = tempMoney - c50*50;
+    const c20 = Math.floor(tempMoney/20);
+    tempMoney = tempMoney - c20*20;
+    const c10 = Math.floor(tempMoney/10);
+    tempMoney = tempMoney - c10*10;
+    const c5 = Math.floor(tempMoney/5);
+    tempMoney = tempMoney - c5*5;
+    const c2 = Math.floor(tempMoney/2);
+    tempMoney = tempMoney - c2*2;
+    const c1 = tempMoney;
+
+    return `แบงค์พัน ${c1000} ใบ / แบงค์ห้าร้อย ${c500} ใบ / แบงค์ร้อย ${c100} ใบ / 
+    แบงค์ห้าสิบ ${c50} ใบ / แบงค์ยี่สิบ ${c20} ใบ / เหรียญสิบ ${c10} เหรียญ / 
+    เหรียญห้า ${c5} เหรียญ / เหรียญสองบาท ${c2} เหรียญ / 
+    เหรียญบาท ${c1} เหรียญ`;
+
+}
+
+
+console.log('\nข้อ 8');
+console.log('input 1 788');
+console.log(toChange(788));
 
 
