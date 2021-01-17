@@ -136,3 +136,36 @@ const isTheSameAnagram =(s1, s2)=>{
 console.log('\nข้อ 6');
 console.log('input 1 cinema iceman');
 console.log( isTheSameAnagram('cinema','iceman'));
+
+
+//7. ให้เขียนฟังก์ชัน numberOfSquare( height , width ) โดยให้หาจำนวนสี่จัตุรัสที่ใหญ่ที่สุดที่สามารถวางได้พอดีเช่น
+
+const numberOfSquare =(height,width)=>{
+    const maxArea = height*width;
+    let stop = height >= width? height : width;
+    let result=0;
+    for(let i = 1 ; i<= stop ; i++){
+      let squareArea = i*i;
+      if(squareArea <= maxArea){
+        maxSquare= squareArea;
+        result++;
+      } 
+    }
+
+    return result;
+}
+
+
+console.log('\nข้อ 7');
+console.log('input 1 15,15');
+console.log( numberOfSquare(15,15));
+console.log('input 2 20,15');
+console.log( numberOfSquare(20,15));
+console.log('input 3 2,8');
+console.log( numberOfSquare(2,8));
+console.log('input 4 1,5');
+console.log( numberOfSquare(1,5));
+
+
+
+
