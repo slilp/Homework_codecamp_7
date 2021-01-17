@@ -84,3 +84,24 @@ console.log('input 1 - [1, 3, 5, 9]');
 console.log( evenArraySum([1, 3, 5, 9]));
 console.log('input 2 - [5, 8, 6, 7, 1]');
 console.log(evenArraySum([5, 8, 6, 7, 1]));
+
+//5. ให้เขียนฟังก์ชัน changeStringtoThaiDate() โดยฟังก์ชันนี้จะรับค่าวันที่ที่เป็นแบบตัวเลข และ คืนค่ามาเป็นวันที่แบบไทย แต่ถ้าวันที่ผิดพลาดหรือเดือน(กุมภาพันธ์ไม่ต้องเช็ค Leap year)ผิดพลาดให้แสดงค่าว่า “Error”
+
+const changeStringToThaiDate=(dateValue)=>{
+
+  if(!Date.parse(dateValue)) return 'Error';
+  const d = new Date(dateValue);
+  const months = ['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม'];
+
+  return `วันที่ ${d.getDate()} ${months[d.getMonth()]} พ.ศ. ${d.getFullYear()+543}`;
+
+}
+
+console.log('\nข้อ 5');
+console.log('input 1 - 12-11-1996');
+console.log( changeStringToThaiDate('12-11-1996'));
+console.log('input 2 - 31-11-2000');
+console.log(changeStringToThaiDate('31-11-2000'));
+console.log('input 2 - 12-13-1996');
+console.log(changeStringToThaiDate('12-13-1996'));
+
