@@ -3,7 +3,7 @@
     width: 50%;
     border-radius: 10px;
     background-color: white;
-
+    margin-top: 1rem;
 }
 
 .content{
@@ -38,4 +38,8 @@
 .btn-like:hover{
     cursor: pointer;
     background-color: rgb(241, 230, 230);
+}
+
+.active-like{
+    color: blue;
 }

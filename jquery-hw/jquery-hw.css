@@ -4,3 +4,10 @@ body,html{
     background-color: rgb(248, 237, 237);
 }
 
+
+button{
+    outline:none;
+ }
+ button:-moz-focus-inner {
+    border: 0;
+ }
