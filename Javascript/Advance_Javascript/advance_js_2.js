@@ -202,3 +202,19 @@ console.log('input 1 788');
 console.log(toChange(788));
 
 
+//9. ให้เขียนฟังก์ชัน maxPossibleNumber( number ) ที่รับตัวเลขเป็นจำนวนจริงโดยคืนค่าเป็นตัวเลขที่มีค่ามากที่สุดที่เป็นไปได้ที่จำนวนหลักยังเท่าเดิม
+
+const maxPossibleNumber =(number)=>{
+
+
+
+
+}
+
+console.log('\nข้อ 9');
+console.log('input 1 69523');
+console.log(maxPossibleNumber(69523));
+console.log('input 2 69523');
+console.log(maxPossibleNumber(69523));
+console.log('input 3 69523');
+console.log(maxPossibleNumber(69523));
