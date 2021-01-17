@@ -28,3 +28,16 @@ const checkCharacter =(word)=>{
   console.log(checkCharacter('string'));
   console.log('input 3 - StrIng');
   console.log(checkCharacter('StrIng'));
+
+
+  //2. ให้เขียนฟังก์ชันยกกำลัง pow(a, n) โดยให้คืนค่าเป็น a ยกกำลัง n
+
+
+  const pow =(a,n)=>{
+
+      return a**n;
+}
+  
+  console.log('\nข้อ 2');
+  console.log('input 1 - (2,4)');
+  console.log(pow(2,4));
