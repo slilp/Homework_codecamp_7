@@ -65,3 +65,22 @@ const checkCharacter =(word)=>{
   console.log('input 3 - {name:Hello}');
   console.log(thaiTypeof({name:'Hello'}));
 
+//4. ให้เขียนฟังก์ชัน evenArraySum( array ) โดยที่ฟังก์ชันนี้จะรับอาเรย์ของตัวเลข array และคืนค่าออกมาเป็นผลรวมของตัวเลขที่เป็นเลขคู่ทั้งหมด
+
+const evenArraySum =(arrayVal)=>{ 
+
+  let result = 0 ;
+
+  for(let items of arrayVal){
+    if(items%2==0) result = result + items;
+  }
+
+  return result ;
+
+}
+
+console.log('\nข้อ 4');
+console.log('input 1 - [1, 3, 5, 9]');
+console.log( evenArraySum([1, 3, 5, 9]));
+console.log('input 2 - [5, 8, 6, 7, 1]');
+console.log(evenArraySum([5, 8, 6, 7, 1]));
