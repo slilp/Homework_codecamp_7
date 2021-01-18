@@ -27,6 +27,13 @@ const options = [
 
 
 const Todo = (props) => {
+
+
+  const changeStatusTodo =(existingStatus)=>{
+     props.todoList[props.id].status = existingStatus.value ;
+     props.setTodoList([...props.todoList]);
+  }
+
   return (
     <React.Fragment>
       <ToDoContent>
@@ -37,6 +44,7 @@ const Todo = (props) => {
           <Select
             options={options}
             defaultValue={{ label: `${props.status}`, value: `${props.status}` }}
+            onChange={changeStatusTodo}
           />
         </ToDoItem>
       </ToDoContent>

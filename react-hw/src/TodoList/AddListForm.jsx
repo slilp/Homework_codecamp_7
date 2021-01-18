@@ -37,7 +37,8 @@ const AddListForm = (props) => {
   const submitTodo = () => {
       if(props.content.length != 0)
       {
-        const add = { text: props.content, status: "waiting" };
+        
+        const add = { id: props.id , text: props.content, status: "waiting" };
         props.setTodoList([...props.todoList,add]);
       }
    

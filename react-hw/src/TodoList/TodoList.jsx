@@ -62,8 +62,14 @@ const TodoLIst = (prop) => {
           />
         </HeaderItem>
       </Header>
-      {todoList.filter(x=> selectedSort=='all' || x.status==selectedSort).map((item) => (
-        <ToDo text={item.text} status={item.status}></ToDo>
+      {todoList.filter(x=> selectedSort=='all' || x.status==selectedSort).map((item,index) => (
+        <ToDo 
+        key={index} 
+        id={index}
+        text={item.text}         
+        setTodoList={setTodoList}
+        todoList={todoList}
+        status={item.status}></ToDo>
       ))}
       <AddListForm
         openAddBtn={openBtn}
