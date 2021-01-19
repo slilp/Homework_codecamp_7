@@ -31,6 +31,11 @@ const Search = styled.div`
   width: 20%;
 `;
 
+const SelectSort = styled.select`
+  padding:1rem;
+  font-size:1rem;
+`
+
 const options = [
   { value: "all", label: "all" },
   { value: "finished", label: "finished" },
@@ -42,11 +47,11 @@ const TodoLIst = (prop) => {
   const [openBtn, setOpenBtn] = useState(true);
   const [todoContent, setTodoContent] = useState("");
   const [todoList, setTodoList] = useState([]);
-  const [selectedSort, setSelectedSort] = useState('all');
+  const [selectedSort, setSelectedSort] = useState("all");
 
-  const sort =(selectedSort)=>{
-    setSelectedSort(selectedSort.value)
-  }
+  const sort = (selectedSort) => {
+    setSelectedSort(selectedSort.target.value);
+  };
 
   return (
     <div>
@@ -55,22 +60,25 @@ const TodoLIst = (prop) => {
           <Title>To-Do</Title>
         </HeaderItem>
         <HeaderItem>
-          <Select
-            options={options}
-            defaultValue={{ label: "all", value: "all" }}
-            onChange={sort}
-          />
+          <SelectSort value={selectedSort.value} onChange={sort}>
+            {options.map((item)=>
+              <option value={item.label}>{item.label}</option>
+            )}
+          </SelectSort>
         </HeaderItem>
       </Header>
-      {todoList.filter(x=> selectedSort=='all' || x.status==selectedSort).map((item,index) => (
-        <ToDo 
-        key={index} 
-        id={index}
-        text={item.text}         
-        setTodoList={setTodoList}
-        todoList={todoList}
-        status={item.status}></ToDo>
-      ))}
+      {todoList
+        .filter((x) => selectedSort == "all" || x.status == selectedSort)
+        .map((item, index) => (
+          <ToDo
+            key={index}
+            id={item.id}
+            text={item.text}
+            setTodoList={setTodoList}
+            todoList={todoList}
+            status={item.status}
+          ></ToDo>
+        ))}
       <AddListForm
         openAddBtn={openBtn}
         setTodoList={setTodoList}

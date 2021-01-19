@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import React from "react";
 import Select from "react-select";
+import React from 'react';
 
 const ToDoContent = styled.div`
   display: flex;
@@ -24,13 +24,15 @@ const options = [
   { value: "waiting", label: "waiting" },
 ];
 
-
+const SelectSort = styled.select`
+  padding:1rem;
+  font-size:1rem;
+`
 
 const Todo = (props) => {
 
-
   const changeStatusTodo =(existingStatus)=>{
-     props.todoList[props.id].status = existingStatus.value ;
+     props.todoList.find(x=>x.id == props.id).status = existingStatus.target.value ;
      props.setTodoList([...props.todoList]);
   }
 
@@ -41,11 +43,12 @@ const Todo = (props) => {
             {props.text}
         </ToDoItem>
         <ToDoItem>
-          <Select
-            options={options}
-            defaultValue={{ label: `${props.status}`, value: `${props.status}` }}
-            onChange={changeStatusTodo}
-          />
+        {props.status}
+        <SelectSort value={props.status} onChange={changeStatusTodo}>
+            {options.map((item)=>
+              <option value={item.label}>{item.label}</option>
+            )}
+          </SelectSort>
         </ToDoItem>
       </ToDoContent>
     </React.Fragment>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import uuid from 'react-uuid';
 
 const Button = styled.button`
   font-size: 1rem;
@@ -38,7 +39,7 @@ const AddListForm = (props) => {
       if(props.content.length != 0)
       {
         
-        const add = { id: props.id , text: props.content, status: "waiting" };
+        const add = { id: uuid() ,  text: props.content, status: "waiting" };
         props.setTodoList([...props.todoList,add]);
       }
    
