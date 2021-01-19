@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Select from "react-select";
 import React from 'react';
 
 const ToDoContent = styled.div`
@@ -43,7 +42,6 @@ const Todo = (props) => {
             {props.text}
         </ToDoItem>
         <ToDoItem>
-        {props.status}
         <SelectSort value={props.status} onChange={changeStatusTodo}>
             {options.map((item)=>
               <option value={item.label}>{item.label}</option>

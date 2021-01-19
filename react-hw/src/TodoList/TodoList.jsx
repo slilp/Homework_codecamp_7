@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import ToDo from "./ToDo";
 import AddListForm from "./AddListForm";
 import styled from "styled-components";
-import Select from "react-select";
 
 const Header = styled.div`
   background-color: #2a9df4;
