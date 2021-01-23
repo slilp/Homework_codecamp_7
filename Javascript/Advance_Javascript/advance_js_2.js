@@ -263,24 +263,24 @@ console.log(maxPossibleNumber(955));
 
 //11. ให้เขียนฟังก์ชันหา dotProduct( vector1 , vector2 ) โดยวิธีหา dot product โดยการนำสมาชิกที่อยู่ตำแหน่งเดียวกันของแต่ละ vector มาคูณกันและนำทั้งหมดมาบวกกัน 
 
-const dotProduct = (dot1,dot2) =>{
- 
-  dot1length = dot1.length ;
+const dotProduct = (dot1, dot2) => {
+
+  dot1length = dot1.length;
   dot2length = dot2.length;
-  if(dot1length != dot2length){
-    if( dot1length > dot2length ){
-      let diff = dot1length - dot2length ;
-      let addArray = new Array(diff).fill(0,0,diff);
+  if (dot1length != dot2length) {
+    if (dot1length > dot2length) {
+      let diff = dot1length - dot2length;
+      let addArray = new Array(diff).fill(0, 0, diff);
       dot2 = dot2.concat(addArray);
-    }else{
-      let diff = dot2length - dot1length ;
-      let addArray = new Array(diff).fill(0,0,diff);
+    } else {
+      let diff = dot2length - dot1length;
+      let addArray = new Array(diff).fill(0, 0, diff);
       dot1 = dot1.concat(addArray);
     }
   }
 
   let sum = 0;
-  for(let i=0 ; i < dot1.length ;i++){
+  for (let i = 0; i < dot1.length; i++) {
     sum = sum + (dot1[i] * dot2[i]);
   }
 
@@ -289,31 +289,44 @@ const dotProduct = (dot1,dot2) =>{
 
 console.log('\nข้อ 11');
 console.log('input 1 [1,2,6,9] dot [3,2,6,3]');
-console.log(dotProduct([1,2,6,9],[3,2,6,3]));
+console.log(dotProduct([1, 2, 6, 9], [3, 2, 6, 3]));
 console.log('input 2 [3,4] dot [2,8,9,11]');
-console.log(dotProduct([3,4],[2,8,9,11]));
+console.log(dotProduct([3, 4], [2, 8, 9, 11]));
 
 
 //ข้อ 12 ให้เขียนฟังก์ชัน maxPairSum( array ) โดยฟังก์ชันนี้จะหาผลรวมของตัวเลขสองตัวที่บวกกันแล้วได้ค่ามากที่สุดใน array 
 
-const maxPairSum = (num)=>{
-    let maxToMin = num.sort( (a,b )=> b-a ) ;
-    return maxToMin[0] + maxToMin[1];
+const maxPairSum = (num) => {
+  let maxToMin = num.sort((a, b) => b - a);
+  return maxToMin[0] + maxToMin[1];
 
 }
 
 console.log('\nข้อ 12');
 console.log('input 1 [2,5,3,9,19,3,7,58]');
-console.log(maxPairSum([2,5,3,9,19,3,7,58]));
+console.log(maxPairSum([2, 5, 3, 9, 19, 3, 7, 58]));
 
 //ข้อ 13 ให้เขียนฟังก์ชัน minPairSum( array ) โดยฟังก์ชันนี้จะหาผลรวมของตัวเลขสองตัวที่บวกกันแล้วได้ค่าน้อยที่สุดใน array
 
-const minPairSum = (num)=>{
-  let minToMax = num.sort( (a,b )=> a-b ) ;
+const minPairSum = (num) => {
+  let minToMax = num.sort((a, b) => a - b);
   return minToMax[0] + minToMax[1];
 
 }
 
-console.log('\nข้อ 12');
+console.log('\nข้อ 13');
 console.log('input 1 [2, 5, 3, 9, 19, 3, 7, 58]');
 console.log(minPairSum([2, 5, 3, 9, 19, 3, 7, 58]));
+
+//ข้อ 14 มีเจ้ากบน้อยอยู่ตัวหนึ่ง สามารถกระโดดได้ในทุกทิศทางบนระนาบ และจะกระโดดเป็นระยะทางครั้งละ X หน่วยพอดี อยู่มาวันหนึ่ง เจ้ากบน้อยต้องการกระโดดจากจุด A ไปยังจุด B ซึ่งเป็นจุดบนระนาบ ที่ตั้งอยู่ห่างกัน Y หน่วย เจ้ากบน้อยอยากให้คุณช่วยหาว่า มันจะต้องกระโดดอย่างน้อยกี่ครั้ง จึงจะไปหยุดที่จุด B พอดี ให้เขียนฟังก์ชัน numberOfJumpFrog( speed, distance ) 
+
+const numberOfJumpFrog = (speed, distance) => {
+ let cal = distance/speed;
+  return Math.round(cal);
+}
+
+console.log('\nข้อ 14');
+console.log('input 1 3, 12');
+console.log(numberOfJumpFrog(3,12));
+console.log('input 2 5, 23');
+console.log(numberOfJumpFrog(5,23));
