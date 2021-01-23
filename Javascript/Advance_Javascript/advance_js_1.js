@@ -259,10 +259,29 @@ console.log(typeSort2([10,5,6,1],false));
 //จงหาผลรวมของจำนวนนับ ที่เป็นพหุคูณของ 3 หรือ 5 ที่มีค่าน้อยกว่า 1000
 
 
+const problem12 = (num) => {
 
+   let num3 = new Set();
+   let num5 = new Set();
 
+   for(let i= 3 ; i<= num ; i+=3){
+      num3.add(i);
+   } 
 
+   for(let i= 5 ; i<= num ; i+=5){
+    num5.add(i);
+  } 
 
+  let numAll = new Set([...num3,...num5]);
+  const reducer = (accumulator, currentValue) => accumulator + currentValue;
+  let result = Array.from(numAll).reduce(reducer);
+  return result;
+
+}
+console.log('\nข้อ 12');
+console.log('input 1000');
+console.log(problem12(1000));
+ 
 
 
 //13.หาผลรวมของเลขที่ใส่เข้ามา เช่น 130,120 จะได้ 1+3+0+1+2+0 = 7
