@@ -305,3 +305,15 @@ const maxPairSum = (num)=>{
 console.log('\nข้อ 12');
 console.log('input 1 [2,5,3,9,19,3,7,58]');
 console.log(maxPairSum([2,5,3,9,19,3,7,58]));
+
+//ข้อ 13 ให้เขียนฟังก์ชัน minPairSum( array ) โดยฟังก์ชันนี้จะหาผลรวมของตัวเลขสองตัวที่บวกกันแล้วได้ค่าน้อยที่สุดใน array
+
+const minPairSum = (num)=>{
+  let minToMax = num.sort( (a,b )=> a-b ) ;
+  return minToMax[0] + minToMax[1];
+
+}
+
+console.log('\nข้อ 12');
+console.log('input 1 [2, 5, 3, 9, 19, 3, 7, 58]');
+console.log(minPairSum([2, 5, 3, 9, 19, 3, 7, 58]));
