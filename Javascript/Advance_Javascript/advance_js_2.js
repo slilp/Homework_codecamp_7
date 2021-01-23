@@ -246,20 +246,35 @@ console.log(maxPossibleNumber(955));
 
 //10. ให้เขียนฟังก์ชันหา squareRoot( number ) โดยเป็นการหา สแควร์รูทในรูปที่ติดรูทไว้
 
-// const squareRoot = (num) => {
-//   let result = Math.sqrt(num);
-//   let root = Math.floor(result);
-//   let subRoot = Math.pow(num, 1/2);
-//   return subRoot == 0 ? root : `${root} root ${subRoot}`  ;
-// }
+const squareRoot = (number) => {
+  let mainRoot = 1;
+  let subRoot = 1;
+  for(let i= number ; i >= 2; i--){
+      let checkSqr = Math.sqrt(i);
+      if( checkSqr === parseInt(checkSqr,10)){
+        let checkSub = number/checkSqr**2 ;
+        if(checkSub === parseInt(checkSub,10)){
+          mainRoot =  checkSqr ;
+          subRoot = checkSub ;
+          break;
+        }
+      }
+    
+  }
 
-// console.log('\nข้อ 10');
-// console.log('input 1 77');
-// console.log(squareRoot(50));
-// console.log('input 2 121');
-// console.log(squareRoot(121));
-// console.log('input 3 12');
-// console.log(squareRoot(12));
+  if(mainRoot == 1)  subRoot = number;
+  if(subRoot == 1)  return `${mainRoot}`;
+  if(mainRoot ==1) return  `root ${subRoot}`;
+  return `${mainRoot} root ${subRoot}`;
+}
+
+console.log('\nข้อ 10');
+console.log('input 1 77');
+console.log(squareRoot(77));
+console.log('input 2 121');
+console.log(squareRoot(121));
+console.log('input 3 12');
+console.log(squareRoot(12));
 
 //11. ให้เขียนฟังก์ชันหา dotProduct( vector1 , vector2 ) โดยวิธีหา dot product โดยการนำสมาชิกที่อยู่ตำแหน่งเดียวกันของแต่ละ vector มาคูณกันและนำทั้งหมดมาบวกกัน 
 
@@ -344,4 +359,3 @@ console.log('input 1 15126, 14');
 console.log(calculateInterest(15126, 14));
 console.log('input 2 100000, 1');
 console.log(calculateInterest(100000, 1));
-
