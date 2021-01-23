@@ -321,12 +321,26 @@ console.log(minPairSum([2, 5, 3, 9, 19, 3, 7, 58]));
 //ข้อ 14 มีเจ้ากบน้อยอยู่ตัวหนึ่ง สามารถกระโดดได้ในทุกทิศทางบนระนาบ และจะกระโดดเป็นระยะทางครั้งละ X หน่วยพอดี อยู่มาวันหนึ่ง เจ้ากบน้อยต้องการกระโดดจากจุด A ไปยังจุด B ซึ่งเป็นจุดบนระนาบ ที่ตั้งอยู่ห่างกัน Y หน่วย เจ้ากบน้อยอยากให้คุณช่วยหาว่า มันจะต้องกระโดดอย่างน้อยกี่ครั้ง จึงจะไปหยุดที่จุด B พอดี ให้เขียนฟังก์ชัน numberOfJumpFrog( speed, distance ) 
 
 const numberOfJumpFrog = (speed, distance) => {
- let cal = distance/speed;
+  let cal = distance / speed;
   return Math.round(cal);
 }
 
 console.log('\nข้อ 14');
 console.log('input 1 3, 12');
-console.log(numberOfJumpFrog(3,12));
+console.log(numberOfJumpFrog(3, 12));
 console.log('input 2 5, 23');
-console.log(numberOfJumpFrog(5,23));
+console.log(numberOfJumpFrog(5, 23));
+
+//ข้อ 15 ในปี พศ 2945 ดอกเบี้ยเงินฝากของธนาคาร Codemy Bank ร้อยละ 2.5 โดยเป็นดอกเบี้ยทบต้นในแต่ละปี ถ้านาย Nat ฝากเงินจำนวน money บาท และฝากไปจำนวน years ปี อยากทราบว่านาย Nat จะได้เงินทั้งหมดเท่าไหร่เมื่อถอน
+//ให้เขียนฟังก์ชัน calculateInterest( money , years ) โดยคืนค่าเป็นจำนวนเงินที่นาย Nat จะได้หลังจากถอนเงิน
+
+const calculateInterest = (money, years) => {
+  const INTEREST = 0.025;
+  return money * Math.pow((1 + INTEREST), years);
+}
+
+console.log('\nข้อ 15');
+console.log('input 1 15126, 14');
+console.log(calculateInterest(15126, 14));
+console.log('input 2 100000, 1');
+console.log(calculateInterest(100000, 1));
