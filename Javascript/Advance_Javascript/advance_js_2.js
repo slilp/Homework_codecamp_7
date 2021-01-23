@@ -344,3 +344,4 @@ console.log('input 1 15126, 14');
 console.log(calculateInterest(15126, 14));
 console.log('input 2 100000, 1');
 console.log(calculateInterest(100000, 1));
+

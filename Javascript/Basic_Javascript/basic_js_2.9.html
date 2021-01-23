@@ -9,7 +9,25 @@
     <script>
       // ให้เขียนโปรแกรมที่หาผลลัพธ์ของ 1x3x5 + 3x5x7 + 5x7x9 + … + 155x157x159 แล้ว alert ผลลัพธ์ออกมา
     
-    
+      function problem9(){
+         const d = 2 ;
+         const a1 = 1 ;
+         const an = 5 ;
+
+         let count = (an - a1)/d + 1 ;
+
+         let sum = 0 ;
+
+         for(let i = 1 ; i<= count ; i++){
+           let num = a1 + (i-1)*d;
+            sum = sum + (num  * (num +d) * (num +d*2) );
+         }
+
+         alert(sum);
+
+       }
+
+       problem9();
     
     </script>
   </body>
