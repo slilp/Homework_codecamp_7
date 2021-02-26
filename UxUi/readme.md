@@ -1,9 +1,13 @@
 1.
 เว็บไซต์ที่เลือก : http://www.yothinangthong.ac.th/
+
 สิ่่งที่เว็บมี :
+
 - Useful: มีประโยชน์ ให้ข้อมูลที่จำเป็นครบถ้วน
 - Credible : น่าเชื่อถือ
+- 
 สิ่งที่เว็บขาดไป :
+
 - Usable : เว็บใช้งานยาก
 - Findable : หาสิ่งที่ต้องการได้ยากเนื่องจากทั้งหน้ามองรวมๆเหมือนกันไปหมด
 - Desirable : เว็บดูไม่ทันสมัยไม่น่าใช้
@@ -16,7 +20,9 @@
 
 5. 
 Low-fidelity Wireframe
+
 - https://www.figma.com/file/2S9y1XwNBsbeRbczczPdXQ/Low_Fidelity_Wireframe
+
 Hi-fidelity Wireframe
 - https://www.figma.com/file/qX7AerExva73hcN85MGmzn/Hi_Fidelity_Wireframe?node-id=11%3A0
 
