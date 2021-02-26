@@ -16,9 +16,9 @@
 
 5. 
 Low-fidelity Wireframe
-https://www.figma.com/file/2S9y1XwNBsbeRbczczPdXQ/Low_Fidelity_Wireframe
+- https://www.figma.com/file/2S9y1XwNBsbeRbczczPdXQ/Low_Fidelity_Wireframe
 Hi-fidelity Wireframe
-https://www.figma.com/file/qX7AerExva73hcN85MGmzn/Hi_Fidelity_Wireframe?node-id=11%3A0
+- https://www.figma.com/file/qX7AerExva73hcN85MGmzn/Hi_Fidelity_Wireframe?node-id=11%3A0
 
 6. เว็บไซต์ที่เป็น inspiration
 - https://www.behance.net/gallery/106599873/Simple-onboarding-mobile-screens?tracking_source=search_projects_recommended%7Cfinancial%20app
