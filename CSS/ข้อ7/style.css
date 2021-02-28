@@ -1,0 +1,125 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    
+}
+
+img{
+    height: 600px;
+    width: 100%;
+}
+
+.form{
+    width: 70%;
+    height: 600px;
+    position: absolute;
+    top: 400px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px  #c7c1c1;
+
+}
+
+header{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.input-form{
+    width: 80%;
+    text-align: center;
+    padding: 1rem;
+    border: 0.25px solid rgb(206, 200, 200);
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.flex-form{
+    display: flex;
+}
+
+.flex-form .item{
+    flex-grow: 1;
+}
+
+label{
+    color: grey;
+    font-weight: 100;
+    margin-left: 1.5rem;
+}
+
+.send-btn{
+    background-color: red;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+.text-main{
+    width: 80%;
+    text-align: center;
+    margin-top: 450px;
+}
+
+.container{
+    margin: 2rem;
+}
+
+.flex-product{
+    display: flex;
+}
+
+.flex-product .item{
+    flex-grow: 1;
+    justify-content: center;
+    text-align: center;
+}
+
+.product-title{
+    color: red;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.input-one{
+    width: 90%;
+}
+
+@media only screen and (max-width: 600px) {
+    .form{
+        width: 95%;
+        height: 700px;
+        top: 300px;
+
+    }
+
+    img{
+        height: 450px;
+        width: 100%;
+    }
+    
+    .flex-form{
+        flex-direction: column;
+    }
+
+    .input-one{
+        width: 80%;
+    }
+
+    
+.text-main{
+
+    margin-top: 600px;
+}
+
+.flex-product{
+    flex-direction: column;
+}
+
+  }
